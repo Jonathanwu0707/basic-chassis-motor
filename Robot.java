@@ -26,9 +26,9 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
     private final VictorSPX frontRightMotor=new VictorSPX(3);
     private final VictorSPX backLeftMotor=new VictorSPX(2);
     private final VictorSPX backRightMotor=new VictorSPX(4);
-    private Encoder encoder=new Encoder(0,1,true,EncodingType.k4X);
+    private Encoder encoder=new Encoder(0,1);
     int setpoint=10;
-    private final double unknown=1.0/128*6*Math.PI/12; 
+    private final double kDriveTick2Feet=1.0/128*6*Math.PI/12; 
    // private Servo CameraServer
     double errorsum;
     double lastTimestamp;
